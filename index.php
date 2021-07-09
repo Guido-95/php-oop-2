@@ -9,7 +9,7 @@ $utnPrm1 = new Premium('Giovanni','Tavolino','Via Napoli 3',2);
 $utnPrm2 = new Premium('Marco','Salotto','Via Roma 2',3);
 
 $prodotto = new TipoProdotto(1099.99,"PC desktop msi",'Informatica');
-$prodotto2 = new TipoProdotto(24.99,"Tavolo", 'Cucina');
+$prodotto2 = new TipoProdotto(5.99,"tovaglia", 'Cucina');
 $prodotto3 = new TipoProdotto(50.00,"Mouse", 'Informatica');
 $nome_prodotto = $prodotto->getNome();
 

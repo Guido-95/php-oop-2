@@ -1,5 +1,5 @@
 <?php 
-require_once __DIR__ . '/TipoProdotto.php';
+require_once __DIR__ . '/Prodotto.php';
 
 class TipoProdotto extends Prodotto{
     // attributi

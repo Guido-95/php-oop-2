@@ -41,8 +41,8 @@ class Utente {
         return $this->indirizzo;
     }
 
-    public function compraProdotto($nome,$prezzo,$tipo){
-        echo $this->nome .' ha ' . ' acquistato ' . $nome. ' a ' . $prezzo . ' nella sezione ' .$tipo;
+    public function compraProdotto($prodotto){
+        echo $this->nome .' ha ' . ' acquistato ' . $prodotto->getNome(). ' a ' . $prodotto->getPrezzo() . ' nella sezione ' .$prodotto->getTipologia();
     }
 
 

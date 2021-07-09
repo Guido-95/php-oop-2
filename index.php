@@ -36,11 +36,11 @@ var_dump($prodotto2);
 </head>
 <body>
 
-<div><?php $utnPrm2->compraProdotto($prodotto->getNome(),$prodotto->getPrezzo(),$prodotto->getTipologia()); ?>
+<div><?php $utnPrm2->compraProdotto($prodotto); ?>
 </div>
-<div> <?php $utnPrm1->compraProdotto($prodotto2->getNome(),$prodotto2->getPrezzo(),$prodotto2->getTipologia());?>
+<div> <?php $utnPrm1->compraProdotto($prodotto2);?>
 </div>
-<div><?php $utn->compraProdotto($prodotto3->getNome(),$prodotto3->getPrezzo(),$prodotto3->getTipologia()); ?>
+<div><?php $utn->compraProdotto($prodotto3); ?>
 </div>
     
 </body>

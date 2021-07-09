@@ -9,7 +9,7 @@ class Prodotto{
     // costruttore
     function __construct($prezzo){
         $this->idProdotto = rand(10000, 100000);
-        $this->prezzo=$prezzo;
+        $this->prezzo=$prezzo . ' &euro;';
  
     }
     

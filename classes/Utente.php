@@ -1,14 +1,11 @@
 <?php
 
-
 class Utente {
     // attributi
     private $nome;
     private $cognome;
     private $indirizzo;
-    // private $abbonamento;
-    // private $sconto;
-
+  
 
 
     // costruttore
@@ -44,9 +41,14 @@ class Utente {
         return $this->indirizzo;
     }
 
-    public function compraProdotto($idProdotto){
-        echo 'prezzo: ' . $idProdotto->prezzo;
+    public function compraProdotto($nome,$prezzo,$tipo){
+        echo $this->nome .' ha ' . ' acquistato ' . $nome. ' a ' . $prezzo . ' nella sezione ' .$tipo;
     }
+
+
+
+
+
 
     
 }

@@ -37,9 +37,7 @@ class Premium extends Utente {
         }
     }
 
-    public function compraProdotto($prodotto){
-        var_dump($prodotto) ;
-    }
+    
 
 
 

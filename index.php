@@ -14,12 +14,6 @@ $prodotto2 = new TipoProdotto(10.99,"Tovaglia Cucina", 'Cucina','https://www.tak
 
 $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images-na.ssl-images-amazon.com/images/I/41ORMrnBptL._AC_.jpg');
 
-
-// var_dump($utn);
-// var_dump($utnPrm1);
-// var_dump($utnPrm2);
-// var_dump($prodotto);
-// var_dump($prodotto2);
 ; ?>
 
 

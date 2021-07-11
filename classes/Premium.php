@@ -2,47 +2,41 @@
 require_once __DIR__ . '/Utente.php';
 
 class Premium extends Utente {
-    private $abbonamento;
+    private $livAbbonamento;
     private $sconto;
     // costruttore
-    function __construct($nome,$cognome,$indirizzo,$abbonamento = 1){
+    function __construct($nome,$cognome,$indirizzo,$livAbbonamento = 1) {
         parent::__construct($nome,$cognome,$indirizzo);
-        $this->abbonamento=$abbonamento;
+        $this->livAbbonamento=$livAbbonamento;
         $this->applicaSconto();
       
     }
 
     // metodi
-    public function setAbbonamento($abbonamento){
-        $this->abbonamento = $abbonamento;
+    public function setlivAbbonamento($livAbbonamento) {
+        $this->livAbbonamento = $livAbbonamento;
     }
 
-    public function getAbbonamento(){
-        return $this->abbonamento;
+    public function getlivAbbonamento() {
+        return $this->livAbbonamento;
     }
 
-    public function getSconto(){
+    public function getSconto() {
         return $this->sconto;
     }
 
 
-    public function applicaSconto(){
-        if($this->abbonamento == 1){
-            $this->sconto = $this->abbonamento * 10 .'%';
-        } elseif($this->abbonamento == 2){
-            $this->sconto = $this->abbonamento * 10 .'%';
+    public function applicaSconto() {
+        if($this->livAbbonamento == 1) {
+            $this->sconto = $this->livAbbonamento * 10 .'%';
+        } elseif($this->livAbbonamento == 2) {
+            $this->sconto = $this->livAbbonamento * 10 .'%';
         }
-        elseif($this->abbonamento == 3){
-            $this->sconto = $this->abbonamento * 10 .'%';
+        elseif($this->livAbbonamento == 3) {
+            $this->sconto = $this->livAbbonamento * 10 .'%';
         }
     }
 
-    
-
-
-
-
 }
-
 
 ; ?>

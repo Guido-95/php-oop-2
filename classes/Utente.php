@@ -6,10 +6,8 @@ class Utente {
     private $cognome;
     private $indirizzo;
   
-
-
     // costruttore
-    function __construct($nome,$cognome,$indirizzo){
+    function __construct($nome,$cognome,$indirizzo) {
         $this->nome = $nome;
         $this->cognome = $cognome;
         $this->indirizzo = $indirizzo;
@@ -17,41 +15,34 @@ class Utente {
     }
 
     // metodi
-    public function setNome($nome){
+    public function setNome($nome) {
         $this->nome = $nome;
     }
 
-    public function getNome(){
+    public function getNome() {
         return $this->nome;
     }
 
-    public function setCognome($cognome){
+    public function setCognome($cognome) {
         $this->cognome = $cognome;
     }
 
-    public function getCognome(){
+    public function getCognome() {
         return $this->cognome;
     }
 
-    public function setIndirizzo($indirizzo){
+    public function setIndirizzo($indirizzo) {
         $this->indirizzo = $indirizzo;
     }
 
-    public function getIndirizzo(){
+    public function getIndirizzo() {
         return $this->indirizzo;
     }
 
-    public function compraProdotto($prodotto){
+    public function compraProdotto($prodotto) {
         echo $this->nome .' ha ' . ' acquistato ' . $prodotto->getNome(). ' a ' . $prodotto->getPrezzo() . ' nella sezione ' .$prodotto->getTipologia();
     }
-
-
-
-
-
-
     
 }
-
 
 ; ?>

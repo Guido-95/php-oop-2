@@ -34,9 +34,11 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
     <title>Prodotti</title>
 </head>
 <body>
-    <h1> Prodotti acquistati</h1>
     
+    <h1> Prodotti acquistati</h1>
+    <!-- prodotti -->
     <div class="prodotti">
+        <!-- prodotto 1 -->
         <div class="prodotto">
             <img src="<?= $prodotto->getImmagine(); ?>">
             <div class="specifiche">
@@ -54,6 +56,8 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
                 <?php $utnPrm2->compraProdotto($prodotto); ?>
             </div>
         </div>
+        <!-- /prodotto 1 -->
+        <!-- prodotto 2 -->
         <div class="prodotto">
             <img src="<?= $prodotto2->getImmagine(); ?>">
             <div class="specifiche">
@@ -71,7 +75,9 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
                 <?php $utnPrm1->compraProdotto($prodotto2);?>
             </div>
         </div>
+        <!-- /prodotto 2 -->
         <div class="prodotto">
+            <!-- prodotto 3 -->
             <img src="<?= $prodotto3->getImmagine(); ?>">
             <div class="specifiche">
                 <div class="nome">
@@ -88,10 +94,15 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
                 <?php $utn->compraProdotto($prodotto3); ?>
             </div>
         </div>
+        <!-- /prodotto 3 -->
     </div>
-    <h2>Utenti</h2>
+    <!-- /prodotti -->
+
+    
+    <h2> Utenti </h2>
+    <!-- utenti -->
     <div class="utenti">
-        
+        <!-- utente 1 -->
         <div class="utente">
             <div>
                 Nome: <?= $utnPrm2->getNome(); ?>
@@ -99,8 +110,10 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
             <div>
                 Livello abbonamento: <?= $utnPrm2->getlivAbbonamento() . ' ' . '<br> ' . 'Sconto '. $utnPrm2->getSconto()  ?>
             </div>
-            
         </div>
+        <!-- /utente 1 -->
+
+        <!-- utente 2 -->
         <div class="utente">
             <div>
                 Nome: <?= $utnPrm1->getNome(); ?>
@@ -108,24 +121,20 @@ $prodotto3 = new TipoProdotto(50.99,"Mouse Razer", 'Informatica','https://images
             <div>
                 Livello abbonamento: <?= $utnPrm1->getlivAbbonamento() . ' '. '<br> ' . 'Sconto '. $utnPrm1->getSconto() ; ?>
             </div>
-           
         </div>
+        <!-- /utente 2 -->
+
+        <!-- utente 3 -->
         <div class="utente">
             <div>
                 Nome: <?= $utn->getNome(); ?>
             </div>
             <div>
                 Livello abbonamento: 0
-            </div>
-           
-            
+            </div> 
         </div>
-      
+        <!-- /utente 3 -->
     </div>
-   
-   
-    
-
-    
+    <!-- /utenti --> 
 </body>
 </html>
